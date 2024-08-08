@@ -18,10 +18,8 @@ export default function SongList() {
   const [message, setMessage] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
   const location = useLocation();
-  const spotifyUrl = location.state.spotifyUrl;
-  const youtubeUrl = location.state.youtubeUrl;
+  const {spotifyUrl, youtubeUrl} = location.state
   const Urls = {spotify_url: spotifyUrl, youtube_url:youtubeUrl}
-
 
   const spotify_playlist_id = get_playlist_id(spotifyUrl)
 

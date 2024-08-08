@@ -5,14 +5,10 @@ import { Link } from 'react-router-dom';
 export default function Form({triggerModal, isLogged}) {
   const [spotifyUrl, setSpotifyUrl] = useState('');
   const [youtubeUrl, setYoutubeUrl] = useState('');
-  /* const [useAI, SetUseAI] = useState(false); */
   const isValidYoutubeUrl = youtubeUrl && youtubeUrl.includes('/playlist?list=');
   const isValidSpotifyUrl = spotifyUrl && spotifyUrl.startsWith('https://open.spotify.com/playlist');
   let canSubmit = isValidYoutubeUrl && isValidSpotifyUrl;
 
-  const handleCheckboxChange = (event) => {
-    /* SetUseAI(event.target.checked); */
-  };
   function handleTriggerModal(){
     if(isLogged) triggerModal("You need to enter valid links", true)
     else triggerModal("You need to be logged in first", true)
@@ -75,16 +71,6 @@ export default function Form({triggerModal, isLogged}) {
             transition: { duration: 0.5 }
           }}
         />
-         <div>
-        <input
-          type="checkbox"
-          className="p-2 mr-2"
-          checked={canSubmit}
-          onChange={handleCheckboxChange}
-        />
-        Use AI to get songs
-      </div>
-          
         {canSubmit ? (
         <Link to='/form_submission' state={{ youtubeUrl, spotifyUrl }} style={{display: "flex"}}>
           <button className="text-2xl button-container">
