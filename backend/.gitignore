@@ -1,0 +1,12 @@
+#client secrets
+client_secret.json
+
+#python bytecode
+__pycache__/
+*.pyc
+
+# Docker volumes or custom files
+docker-compose.yml
+
+#environment variables
+.env

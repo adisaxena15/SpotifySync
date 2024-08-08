@@ -1,0 +1,135 @@
+
+.song-list-container {
+    width: 60%;
+    margin: 20px auto;
+    background: #111111;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .song-item {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .song-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+  }
+  @media (min-width: 768px) {
+    .song-list-container {
+        width: 50%;
+    }
+    .song-item{
+      height: 4rem;
+    }
+  }
+  @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 3rem;
+}
+.loading-text span:nth-child(1) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 0s infinite linear alternate;
+          animation: blur-text 1s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.2s infinite linear alternate;
+          animation: blur-text 1s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.4s infinite linear alternate;
+          animation: blur-text 1s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.6s infinite linear alternate;
+          animation: blur-text 1s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.8s infinite linear alternate;
+          animation: blur-text 1s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 1s infinite linear alternate;
+          animation: blur-text 1s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1s 1.2s infinite linear alternate;
+          animation: blur-text 1s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+.modal{
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  z-index: 100;
+}
