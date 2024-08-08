@@ -10,7 +10,6 @@ Spotify Sync is a web application designed to synchronize music playlists betwee
 - **Playlist Synchronization**: Users can select a YouTube playlist to sync, and the app will automatically add all available tracks to a specified Spotify playlist.
 - **Responsive UI**: A clean and responsive interface for an optimal user experience across various devices and screen sizes.
 - **Error Handling**: Comprehensive error handling to ensure users are informed of any issues during the sync process.
-- ""AI Integration**: This is an option to integrate the ChatGPT 3.5-turbo model to fetch accurate song titles when YouTube titles are inaccurate.
 
 ## Technologies Used
 
